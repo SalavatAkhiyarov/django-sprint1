@@ -45,7 +45,8 @@ posts = [
 ]
 posts_dict = {}
 for post in posts:
-    posts_dict[post['id']]=post
+    posts_dict[post['id']] = post
+
 
 def category_posts(request, category_slug):
     return render(request, 'blog/category.html', {'category': category_slug})
